@@ -176,6 +176,14 @@ section{padding:5.5rem 1.5rem;position:relative;z-index:1;}
 .rcard:hover::after,.rcard.done::after,.rcard.active::after{transform:scaleX(1);}
 .rcard.done{border-color:rgba(74,222,128,0.18);background:rgba(74,222,128,0.03);}
 .rcard.active{border-color:rgba(74,222,128,0.35);background:rgba(74,222,128,0.05);box-shadow:0 0 28px rgba(74,222,128,0.06);}
+.pagination-preview{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0.85rem;margin-top:2rem;padding:1rem 0;}
+.page-btn{padding:0.85rem 1.4rem;border-radius:999px;background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.15);color:var(--green);font-weight:700;cursor:pointer;transition:all 0.2s;}
+.page-btn:hover{background:rgba(74,222,128,0.18);transform:translateY(-1px);}
+.page-list{display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;}
+.page-pill{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.75);font-weight:700;cursor:pointer;transition:all 0.2s;}
+.page-pill:hover{background:rgba(74,222,128,0.12);border-color:rgba(74,222,128,0.25);}
+.page-pill.active{background:var(--green);color:#000;border-color:var(--green);box-shadow:0 0 18px rgba(74,222,128,0.18);}
+.page-dots{color:rgba(255,255,255,0.5);font-size:0.95rem;}
 .rphase{font-family:'Fredoka One',cursive;font-size:0.68rem;letter-spacing:3px;color:var(--green);margin-bottom:0.6rem;text-transform:uppercase;}
 .rtitle{font-family:'Fredoka One',cursive;font-size:1rem;color:#fff;margin-bottom:1rem;}
 .ritems{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
@@ -279,4 +287,8 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
   .social-row{flex-direction:column;align-items:center;}
   .soc-btn{width:100%;max-width:300px;justify-content:center;}
   .mobile-menu a{font-size:1.3rem;}
+  .pagination-preview{padding:0.6rem 0;gap:0.5rem;max-width:100%;}
+  .page-btn{padding:0.7rem 1rem;font-size:0.86rem;}
+  .page-pill{width:34px;height:34px;font-size:0.78rem;}
+  .page-list{gap:0.35rem;}
 }
