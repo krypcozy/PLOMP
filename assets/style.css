@@ -114,10 +114,13 @@ section{padding:5.5rem 1.5rem;position:relative;z-index:1;}
 
 /* ── PHONE ── */
 .phone-sec{background:var(--dark2);}
-.phone-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
-.phone-wrap-outer{position:relative;display:flex;justify-content:center;align-items:center;width:clamp(340px,42vw,420px);height:clamp(340px,42vw,420px);margin:0 auto;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(74,222,128,0.14) 0%,transparent 58%);border:1px solid rgba(74,222,128,0.18);box-shadow:0 50px 140px rgba(11,39,19,0.45), inset 0 0 0 1px rgba(74,222,128,0.08);animation:floatBounce 4.5s ease-in-out infinite;}
-.phone-glow{position:absolute;width:110%;height:110%;background:radial-gradient(circle at 50% 45%,rgba(74,222,128,0.42) 0%,rgba(74,222,128,0.08) 22%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;filter:blur(24px);opacity:0.9;}
-.phone-frame{width:100%;max-width:290px;position:relative;z-index:2;animation:floatBounce 4.2s ease-in-out infinite;}
+.phone-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem;align-items:center;justify-items:center;width:100%;}
+.phone-grid > *{width:100%;}
+.phone-grid .reveal{max-width:560px;align-self:center;}
+.phone-grid .reveal{text-align:left;padding:0 1rem;}
+.phone-wrap-outer{position:relative;display:flex;justify-content:center;align-items:center;width:clamp(300px,36vw,420px);height:clamp(300px,36vw,420px);margin:0 auto;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(74,222,128,0.12) 0%,transparent 60%);border:1px solid rgba(74,222,128,0.14);box-shadow:0 40px 100px rgba(11,39,19,0.35), inset 0 0 0 1px rgba(74,222,128,0.06);animation:floatBounce 4.5s ease-in-out infinite;will-change:transform;}
+.phone-glow{position:absolute;width:110%;height:110%;background:radial-gradient(circle at 50% 45%,rgba(74,222,128,0.42) 0%,rgba(74,222,128,0.08) 22%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;filter:blur(22px);opacity:0.9;pointer-events:none;}
+.phone-frame{width:100%;max-width:320px;position:relative;z-index:2;}
 .phone-frame::before{content:'';position:absolute;left:-8px;top:16%;width:4px;height:90px;border-radius:999px;background:rgba(255,255,255,0.08);box-shadow:0 0 20px rgba(255,255,255,0.08);}
 .phone-frame::after{content:'';position:absolute;right:-8px;top:30%;width:4px;height:56px;border-radius:999px;background:rgba(255,255,255,0.08);box-shadow:0 0 20px rgba(255,255,255,0.08);}
 .phone-body{background:linear-gradient(180deg,rgba(18,28,26,0.96),rgba(8,12,10,0.96));border-radius:64px;border:1px solid rgba(255,255,255,0.08);padding:1.5rem 1.2rem 1.8rem;box-shadow:0 28px 60px rgba(0,0,0,0.65),inset 0 0 0 1px rgba(255,255,255,0.02);position:relative;overflow:hidden;}
@@ -199,9 +202,7 @@ section{padding:5.5rem 1.5rem;position:relative;z-index:1;}
 .faq-q-text{font-size:clamp(0.88rem,2vw,0.97rem);font-weight:600;color:rgba(255,255,255,0.82);line-height:1.4;}
 .faq-toggle{width:32px;height:32px;min-width:32px;border-radius:50%;border:1px solid rgba(74,222,128,0.28);background:transparent;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--green);font-size:1.4rem;font-weight:300;transition:all 0.35s;cursor:pointer;line-height:1;}
 .faq-item.open .faq-toggle{background:var(--green);color:#000;border-color:var(--green);transform:rotate(45deg);font-weight:700;}
-.faq-ans{max-height:0;overflow:hidden;transition:max-height 0.45s ease;}
 .faq-item.open .faq-ans{max-height:400px;}
-.faq-ans-inner{padding:0 0 1.3rem;font-size:clamp(0.82rem,2vw,0.88rem);color:var(--muted);line-height:1.85;}
 
 /* ── COMMUNITY ── */
 .community-sec{background:var(--dark3);text-align:center;}
@@ -252,14 +253,29 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
   .nav-links{display:none;}
   .nav-cta{display:none;}
   .hamburger{display:flex;}
-  .about-grid,.phone-grid{grid-template-columns:1fr;}
+  .about-grid{grid-template-columns:1fr;}
+  .phone-grid{grid-template-columns:1fr;row-gap:1.8rem;}
+  .phone-grid .reveal{text-align:center;padding:0 0.6rem;}
   .about-img-wrap{order:-1;}
-  .phone-wrap-outer{order:-1;margin-bottom:2rem;}
+  .phone-wrap-outer{order:-1;margin-bottom:1.5rem;width:min(320px,84%);height:auto;}
+  .phone-frame{max-width:100%;}
   .roadmap-grid{grid-template-columns:1fr 1fr;}
   .token-stats{grid-template-columns:1fr 1fr;}
   .token-stats .tstat:last-child{grid-column:1/-1;}
   .footer-top{grid-template-columns:1fr;gap:2rem;}
   .footer-bottom{flex-direction:column;}
+}
+
+/* Reduce heavy effects on very small devices and for users who prefer reduced motion */
+@media(max-width:480px){
+  .phone-wrap-outer{box-shadow:0 10px 30px rgba(11,39,19,0.25);}
+  .phone-glow{filter:blur(12px);opacity:0.7;}
+  .hero-mascot, .about-mascot{animation-duration:5s;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .hero-mascot, .about-mascot, .phone-frame, .phone-wrap-outer{animation:none;transition:none !important;}
+  .phone-wrap-outer{transform:none !important;}
 }
 
 /* ══ MOBILE ══ */
@@ -281,4 +297,23 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
   .social-row{flex-direction:column;align-items:center;}
   .soc-btn{width:100%;max-width:300px;justify-content:center;}
   .mobile-menu a{font-size:1.3rem;}
+
+  /* Phone/media specific mobile improvements */
+  .phone-grid{grid-template-columns:1fr;gap:1.4rem;padding:0 0.6rem;align-items:start;}
+  .phone-grid > *{width:100%;}
+  .phone-wrap-outer{width:min(320px,94%);height:auto;padding:10px;border-radius:22px;margin:0 auto;box-shadow:0 18px 40px rgba(6,18,10,0.45);}
+  .phone-glow{display:block;filter:blur(10px);opacity:0.6;height:80%;width:80%;}
+  .phone-frame{max-width:100%;transform:none;}
+  .phone-body{padding:1.2rem 0.9rem 1.2rem;border-radius:18px;}
+  .phone-top{flex-direction:row;gap:8px;justify-content:center;align-items:center;}
+  .phone-brand{gap:8px;}
+  .phone-name{font-size:0.9rem;}
+  .phone-bal-num{font-size:clamp(1.2rem,6vw,1.6rem);}
+  .phone-bal-sub{font-size:0.68rem;margin-bottom:1rem;}
+  .phone-btns{grid-template-columns:1fr;gap:8px;margin:0 auto;max-width:320px;}
+  .pbtn{width:100%;display:flex;justify-content:center;padding:0.9rem;border-radius:12px;}
+  .pbtn-icon{margin-bottom:0; margin-right:8px}
+  .pbtn-lbl{font-size:0.85rem}
+  .phone-feats{gap:1rem;padding:0 0.4rem}
+  .phone-grid .reveal{padding:0 0.6rem;text-align:center;}
 }
