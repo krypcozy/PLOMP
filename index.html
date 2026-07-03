@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PLOMP ($PMP) — The pure memecoin on Solana. We don't pump. We PLOMP. Join the Plompers!">
+<title>PLOMP | $PMP — We Don't just Pump... We PLOMP.</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<canvas id="particleCanvas"></canvas>
+
+<!-- ══ NAV ══ -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">
+    <img src="assets/logo.png" alt="PLOMP">
+    <span class="nav-logo-text">PLOMP</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#tokenomics">Tokenomics</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#community">Community</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://t.me/PLOMPONSOL" target="_blank" class="nav-cta"> Join Plompers</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#tokenomics">Tokenomics</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#faq">FAQ</a>
+  <a href="#community">Community</a>
+  <a href="https://t.me/PLOMPONSOL" target="_blank" class="mob-cta"> Join Plompers</a>
+  <div class="mob-socials">
+    <a href="https://t.me/PLOMPONSOL" target="_blank">Telegram</a>
+    <a href="https://x.com/PLOMPONSOLSOL" target="_blank">X / Twitter</a>
+    <a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank">DexScreener</a>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-eyebrow"><span class="eyebrow-dot"></span>$PMP is LIVE on Solana</div>
+  <div class="hero-mascot-wrap">
+    <div class="hero-ring hero-ring-2"></div>
+    <div class="hero-ring hero-ring-1"></div>
+    <img src="assets/logo.png" alt="PLOMP Mascot" class="hero-mascot">
+  </div>
+  <h1 class="hero-title"><span class="green">PLO</span>MP</h1>
+  <p class="hero-ticker">$PMP</p>
+  <p class="hero-tagline">We Don't just Pump... <strong>We PLOMP.</strong></p>
+  <p class="hero-sub">You don't buy PLOMP because it makes sense.<br>You buy it because you know what happens if you don't.</p>
+  <div class="hero-btns">
+    <a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank" class="btn-green"> Buy $PMP</a>
+    <a href="https://t.me/PLOMPONSOL" target="_blank" class="btn-ghost"> Join Plompers</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><div class="hstat-num">1B</div><div class="hstat-lbl">Total Supply</div></div>
+    <div class="hstat"><div class="hstat-num">SOL</div><div class="hstat-lbl">Network</div></div>
+    <div class="hstat"><div class="hstat-num">0%</div><div class="hstat-lbl">Tax</div></div>
+    <div class="hstat"><div class="hstat-num">5 YR</div><div class="hstat-lbl">Vesting Lock</div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ BANNER ══ -->
+<div class="banner-sec" style="position:relative;z-index:1;">
+  <img src="assets/banner.jpg" alt="PLOMP Banner" class="banner-img">
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about" class="about-sec">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="sec-tag">What Is PLOMP</p>
+        <h2 class="sec-title">Pure Meme.<br><span>Pure Community.</span></h2>
+        <p class="sec-desc">PLOMP is a pure community Driven memecoin on Solana. No fake utility. No empty promises. Just vibes, memes, and the collective power of the Plompers. One Blob. One Mission.</p>
+        <div style="margin-top:1.5rem;">
+          <a href="https://t.me/PLOMPONSOL" target="_blank" class="btn-green"> Join The Plompers</a>
+        </div>
+        <div class="about-cards">
+          <div class="acard"><div class="acard-icon"></div><div class="acard-title">Strong Community</div><div class="acard-desc">Every Plomper helps build the hype together.</div></div>
+          <div class="acard"><div class="acard-icon"></div><div class="acard-title">Good Vibes Only</div><div class="acard-desc">Memes, energy, and pure blob power.</div></div>
+          <div class="acard"><div class="acard-icon"></div><div class="acard-title">Big Plans</div><div class="acard-desc">CEX listings, airdrops, NFTs and more chaos ahead.</div></div>
+          <div class="acard"><div class="acard-icon"></div><div class="acard-title">PLOMP Together</div><div class="acard-desc">One Blob. One Mission. We PLOMP as one.</div></div>
+        </div>
+      </div>
+      <div class="about-img-wrap reveal">
+        <div class="about-glow"></div>
+        <img src="assets/logo.png" alt="PLOMP Mascot" class="about-mascot">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ PHONE / WALLET SECTION ══ -->
+<section id="buy" style="background:var(--dark2);">
+  <div class="container">
+    <div class="phone-grid">
+      <div class="phone-wrap-outer reveal">
+        <div class="phone-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-body">
+            <span class="phone-notch"></span>
+            <div class="phone-top">
+              <div class="phone-brand">
+                <div class="phone-icon">🐸</div>
+                <span class="phone-name">PLOMP</span>
+              </div>
+              <div class="phone-badge"><span class="phone-badge-dot"></span>SOL</div>
+            </div>
+            <div class="phone-bal-lbl">Total Balance</div>
+            <div class="phone-bal-num">1,000,000</div>
+            <div class="phone-bal-sub">$PMP Just PLOMP it </div>
+            <div class="phone-btns">
+              <div class="pbtn"><div class="pbtn-icon">📤</div><div class="pbtn-lbl">Send</div></div>
+              <div class="pbtn"><div class="pbtn-icon">📥</div><div class="pbtn-lbl">Receive</div></div>
+              <div class="pbtn"><div class="pbtn-icon">💱</div><div class="pbtn-lbl">Swap</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="sec-tag">How To Buy</p>
+        <h2 class="sec-title">Get Your <span>PLOMP</span> Now.</h2>
+        <p class="sec-desc">PLOMP lives on Solana, the fastest chain for meme coins. Get your $PMP in seconds with zero tax.</p>
+        <div class="phone-feats" style="margin-top:2rem;">
+          <div class="pfeat"><div class="pfeat-icon">✔️</div><div><div class="pfeat-title">Get a Solana Wallet</div><div class="pfeat-desc">Download Phantom or Solflare wallet. Create and secure your account.</div></div></div>
+          <div class="pfeat"><div class="pfeat-icon">✔️</div><div><div class="pfeat-title">Buy SOL</div><div class="pfeat-desc">Purchase SOL from any exchange and send to your wallet.</div></div></div>
+          <div class="pfeat"><div class="pfeat-icon">✔️</div><div><div class="pfeat-title">Swap on Raydium</div><div class="pfeat-desc">Go to Raydium or Jupiter, paste the $PMP contract and swap.</div></div></div>
+          <div class="pfeat"><div class="pfeat-icon">✔️</div><div><div class="pfeat-title">You Are Now a Plomper</div><div class="pfeat-desc">Welcome to the blob family. Now PLOMP with us. 0% tax, no slippage tricks.</div></div></div>
+        </div>
+        <div style="margin-top:2rem;">
+          <a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank" class="btn-green">Buy on DexScreener</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ TOKENOMICS ══ -->
+<section id="tokenomics" class="token-sec">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="sec-tag">Token Economics</p>
+      <h2 class="sec-title">PLOMP <span>Tokenomics</span></h2>
+      <p class="sec-desc">Fixed supply. Zero tax. No minting. Just pure transparent PLOMP distribution.</p>
+    </div>
+    <div class="token-stats reveal">
+      <div class="tstat"><div class="tstat-num">1B</div><div class="tstat-lbl">Fixed Supply</div></div>
+      <div class="tstat"><div class="tstat-num">SPL</div><div class="tstat-lbl">Token Standard</div></div>
+      <div class="tstat"><div class="tstat-num">0%</div><div class="tstat-lbl">Transaction Tax</div></div>
+    </div>
+
+    <div class="token-bars reveal" id="tokenBars">
+      <div class="tbar-row">
+        <div class="tbar-header"><span class="tbar-name"> Liquidity Pool</span><span class="tbar-pct">25%</span></div>
+        <div class="tbar-track"><div class="tbar-fill" style="--w:25%"></div></div>
+        <div class="tbar-desc">250,000,000 $PMP  Active in live LP. Provides stable trading depth on Raydium/Solana DEX.</div>
+      </div>
+      <div class="tbar-row">
+        <div class="tbar-header"><span class="tbar-name"> Lock Wallet (5-Year Vest)</span><span class="tbar-pct">15%</span></div>
+        <div class="tbar-track"><div class="tbar-fill" style="--w:15%"></div></div>
+        <div class="tbar-desc">150,000,000 $PMP  Locked with 5-year vesting. 30M unlocks each year. Lock certificates available on request.</div>
+      </div>
+      <div class="tbar-row">
+        <div class="tbar-header"><span class="tbar-name"> Authority / Future Dev</span><span class="tbar-pct">25%</span></div>
+        <div class="tbar-track"><div class="tbar-fill" style="--w:25%"></div></div>
+        <div class="tbar-desc">250,000,000 $PMP  Reserved for future development, exchange listings, and community initiatives.</div>
+      </div>
+      <div class="tbar-row">
+        <div class="tbar-header"><span class="tbar-name"> Meme Wallet</span><span class="tbar-pct">25%</span></div>
+        <div class="tbar-track"><div class="tbar-fill" style="--w:25%"></div></div>
+        <div class="tbar-desc">250,000,000 $PMP  Marketing, airdrops, meme contests, community experiments, and future hype campaigns.</div>
+      </div>
+      <div class="tbar-row">
+        <div class="tbar-header"><span class="tbar-name"> Circulating Supply</span><span class="tbar-pct">10%</span></div>
+        <div class="tbar-track"><div class="tbar-fill" style="--w:10%"></div></div>
+        <div class="tbar-desc">100,000,000 $PMP  Already in circulation from early community distribution.</div>
+      </div>
+    </div>
+
+    <div class="contract-box reveal">
+      <div>
+        <div class="ca-label">Contract Address (CA) Solana</div>
+        <div class="ca-address" id="caAddr">7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx</div>
+      </div>
+      <button class="ca-copy" onclick="copyCA()">📋 COPY CA</button>
+    </div>
+    <div class="warning-row reveal">
+      <div class="warn-pill">⚠️ Admins will never DM you first</div>
+      <div class="warn-pill">🔑 Never share your seed phrase</div>
+      <div class="warn-pill">✅ Always verify the official contract</div>
+    </div>
+    <div class="text-center reveal">
+      <button class="wp-btn" onclick="downloadWhitepaper()">📄 Download Whitepaper</button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ ROADMAP ══ -->
+<section id="roadmap" style="background:var(--dark2);">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="sec-tag">The PLOMP Journey</p>
+      <h2 class="sec-title">PLOMP <span>Roadmap</span></h2>
+      <p class="sec-desc">No fake promises. Just the blob's honest path to total meme domination.</p>
+    </div>
+    <div class="roadmap-grid">
+      <div class="rcard done reveal">
+        <span class="rcard-status status-done">✓ Done</span>
+        <div class="rphase">Phase 01</div>
+        <div class="rtitle">The Blob Awakens</div>
+        <ul class="ritems">
+          <li class="ritem checked"><span class="ritem-icon">✓</span>Token deployed on Solana</li>
+          <li class="ritem checked"><span class="ritem-icon">✓</span>Liquidity pool created</li>
+          <li class="ritem checked"><span class="ritem-icon">✓</span>Telegram community launched</li>
+          <li class="ritem checked"><span class="ritem-icon">✓</span>X account live</li>
+          <li class="ritem checked"><span class="ritem-icon">✓</span>DexScreener listing live</li>
+        </ul>
+      </div>
+      <div class="rcard active reveal">
+        <span class="rcard-status status-live">● Live</span>
+        <div class="rphase">Phase 02</div>
+        <div class="rtitle">The PLOMP Spreads</div>
+        <ul class="ritems">
+          <li class="ritem active-item"><span class="ritem-icon">◉</span>Community growth campaigns</li>
+          <li class="ritem active-item"><span class="ritem-icon">◉</span>Meme contest campaigns</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>CoinGecko listing</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>CoinMarketCap listing</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>KOL & influencer outreach</li>
+        </ul>
+      </div>
+      <div class="rcard reveal">
+        <span class="rcard-status status-soon">Soon</span>
+        <div class="rphase">Phase 03</div>
+        <div class="rtitle">The Great PLOMP</div>
+        <ul class="ritems">
+          <li class="ritem pending"><span class="ritem-icon">○</span>CEX listing applications</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>Major airdrop campaign</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>PLOMP merchandise drop</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>Community NFT collection</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>Sticker pack & meme kit</li>
+        </ul>
+      </div>
+      <div class="rcard reveal">
+        <span class="rcard-status status-soon">Soon</span>
+        <div class="rphase">Phase 04</div>
+        <div class="rtitle">PLOMP Takes Over</div>
+        <ul class="ritems">
+          <li class="ritem pending"><span class="ritem-icon">○</span>Tier-1 CEX listing</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>PLOMP DAO experiments</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>Cross-chain expansion</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>Global meme domination</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>Everyone knows PLOMP</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ FAQ ══ -->
+<section id="faq" class="token-sec">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="sec-tag">Got Questions?</p>
+      <h2 class="sec-title">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-wrap">
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is PLOMP ($PMP)?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">PLOMP ($PMP) is a pure community-driven memecoin on the Solana blockchain. There is no complex utility, no fake tech roadmap, just pure hype, meme energy, and community power. PLOMP is built on vibes and the collective belief of the Plompers. One Blob. One Mission.</div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Why should I buy PLOMP?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">You don't buy PLOMP because it makes sense. You buy it because you know what happens if you don't.  In all seriousness, PLOMP has a locked liquidity pool, a 5-year vesting schedule, zero taxes, and a fixed supply. The community is real, the memes are elite, and the blob energy is unstoppable.</div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">How do I buy $PMP?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">1. Get a Solana wallet (Phantom or Solflare). 2. Buy SOL from any exchange. 3. Go to Raydium or Jupiter. 4. Paste the contract address: 7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx. 5. Swap SOL for $PMP with 0% tax. You are now a Plomper. Welcome to the blob family.</div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">What is the total supply and tokenomics?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">Total supply is fixed at 1,000,000,000 PLOMP. No more can ever be minted. 25% is in the liquidity pool, 15% is locked for 5 years (30M unlocks per year), 25% is in the authority wallet for future development, 25% is in the meme wallet for airdrops and campaigns, and the remaining 10% is already in circulation.</div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Is the liquidity locked?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">Yes. 150,000,000 $PMP (15% of supply) is locked in a vesting wallet with a 5-year schedule, 30M tokens unlock each year. Lock certificates are available upon request. The 250M in the LP is also secured to maintain stable trading depth. PLOMP is not a rug.</div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Is there a transaction tax?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">Zero. Absolutely no buy or sell tax. No hidden fees. No sneaky slippage requirements. What you swap is what you get. The supply is fixed and minting is permanently disabled. Pure, clean, and honest PLOMP.</div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Who is behind PLOMP?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">The project lead is Cozy, known on X as @STRANGCOZY. PLOMP is community-owned and community-driven. There are no shadowy anonymous developers, the team is transparent, the lock certificates are verifiable, and the community IS the team. Join Telegram for direct communication.</div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Where can I find the contract address?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-ans"><div class="faq-ans-inner">The official $PMP contract address on Solana is: 7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx You can copy it from the Tokenomics section above. Always verify through our official DexScreener link or Telegram. Never buy from links sent in DMs.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ COMMUNITY ══ -->
+<section id="community" class="community-sec">
+  <div class="container">
+    <img src="assets/logo.png" alt="PLOMP" class="community-mascot">
+    <div class="text-center">
+      <p class="sec-tag">Join The Plompers</p>
+      <h2 class="sec-title">One Blob.<br><span>One Mission.</span></h2>
+      <p class="sec-desc" style="margin:1rem auto;">PLOMP is built by its community. Join thousands of Plompers spreading the blob energy across Solana and beyond.</p>
+    </div>
+    <div class="owner-box reveal">
+      <div class="owner-avatar">
+        <img src="assets/owner.png" alt="COZY Owner">
+      </div>
+      <div>
+        <div class="owner-label">Project Lead</div>
+        <div class="owner-name">COZY</div>
+        <a href="https://x.com/STRANGCOZY" target="_blank" class="owner-link">@STRANGCOZY on X →</a>
+      </div>
+    </div>
+    <div class="social-row">
+      <a href="https://t.me/PLOMPONSOL" target="_blank" class="soc-btn soc-tg"> Telegram</a>
+      <a href="https://x.com/PLOMPONSOLSOL" target="_blank" class="soc-btn soc-x">Follow on X</a>
+      <a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank" class="soc-btn soc-dex"> DexScreener</a>
+      <a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank" class="soc-btn soc-green"> Buy $PMP</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-logo">PLOMP</div>
+        <div class="footer-brand-desc">We don't pump. We PLOMP. A pure community memecoin on Solana. One Blob. One Mission.</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="assets/plomp_whitepaper.pdf" download="PLOMP_Whitepaper.pdf">Whitepaper PDF</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Official Links</div>
+        <ul class="footer-links">
+          <li><a href="https://t.me/PLOMPONSOL" target="_blank">Telegram</a></li>
+          <li><a href="https://x.com/PLOMPONSOLSOL" target="_blank">Twitter / X</a></li>
+          <li><a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank">DexScreener</a></li>
+          <li><a href="https://x.com/STRANGCOZY" target="_blank">Lead: @STRANGCOZY</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <div class="footer-copy">© 2025–2026 PLOMP ($PMP) All rights reserved. </div>
+        <div class="footer-disclaimer">Not financial advice. $PMP is a meme token with no intrinsic value. Crypto investments carry significant risk. Always DYOR. Just PLOMP it.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
