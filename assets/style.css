@@ -107,7 +107,7 @@ section{padding:5.5rem 1.5rem;position:relative;z-index:1;min-width:0;}
 .about-glow{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(320px,70vw);height:min(320px,70vw);border-radius:50%;background:radial-gradient(circle,rgba(74,222,128,0.1) 0%,transparent 70%);max-width:100%;}
 .about-mascot{width:clamp(200px,40vw,320px);height:auto;animation:floatY 4.5s ease-in-out infinite 0.5s;filter:drop-shadow(0 0 50px rgba(74,222,128,0.45));border-radius:50%;object-fit:cover;border:4px solid rgba(74,222,128,0.25);background:radial-gradient(circle at top, rgba(74,222,128,0.18), transparent 65%);box-shadow:0 0 35px rgba(74,222,128,0.18), inset 0 0 18px rgba(255,255,255,0.12);}
 .about-cards{display:grid;grid-template-columns:1fr 1fr;gap:0.9rem;margin-top:2rem;}
-.acard{background:rgba(74,222,128,0.03);border:1px solid rgba(74,222,128,0.08);border-radius:14px;padding:1.2rem;transition:all 0.3s;}
+.acard{background:rgba(74,222,128,0.03);border:1px solid rgba(74,222,128,0.08);border-radius:14px;padding:1rem;transition:all 0.3s;}
 .acard:hover{background:rgba(74,222,128,0.07);border-color:rgba(74,222,128,0.25);transform:translateY(-3px);}
 .acard-icon{font-size:1.5rem;margin-bottom:0.5rem;}
 .acard-title{font-family:'Fredoka One',cursive;font-size:0.95rem;color:var(--green);margin-bottom:0.3rem;}
@@ -244,7 +244,7 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
 .footer-links a{color:#0a2a12;font-size:0.8rem;transition:color 0.2s;}
 .footer-links a:hover{color:var(--green);}
 .footer-bottom{border-top:1px solid #060f07;padding-top:2rem;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;}
-.footer-copy{font-size:0.7rem;color:#071408;}
+.footer-copy{font-size:0.7rem;color:#6a9b77;}
 .footer-disclaimer{font-size:0.66rem;color:#061208;max-width:460px;line-height:1.6;margin-top:4px;}
 
 /* ── ANIMATIONS ── */
@@ -271,6 +271,7 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
 
 /* ══ MOBILE ══ */
 @media(max-width:600px){
+  nav{padding:.75rem 1rem;}
   section{padding:4rem 1.2rem;}
   .hero{padding:6rem 1.2rem 3.5rem;}
   .hero-btns{flex-direction:column;align-items:center;}
@@ -286,10 +287,14 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
   .ca-copy{width:100%;text-align:center;}
   .warning-row{flex-direction:column;}
   .social-row{flex-direction:column;align-items:center;}
-  .soc-btn{width:100%;max-width:300px;justify-content:center;}
+  .soc-btn{width:100%;justify-content:center;}
   .mobile-menu a{font-size:1.3rem;}
   .pagination-preview{padding:0.6rem 0;gap:0.5rem;max-width:100%;}
   .page-btn{padding:0.7rem 1rem;font-size:0.86rem;}
   .page-pill{width:34px;height:34px;font-size:0.78rem;}
   .page-list{gap:0.35rem;}
+  .hero-title{    font-size:2.8rem;    letter-spacing:1px;    line-height:1;}
+  .hero-ring{    display:none;}
+  .phone-frame{    width:170px;}
+  .phone-glow{    width:180px;    height:180px;}
 }
