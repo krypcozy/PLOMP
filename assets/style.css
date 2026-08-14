@@ -229,16 +229,16 @@ section{padding:6.5rem 2.5rem;position:relative;z-index:1;min-width:0;}
 .owner-link:hover{color:var(--green);}
 
 /* ── FOOTER ── */
-footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4rem 1.5rem 2rem;position:relative;z-index:1;}
+footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4rem 1.5rem 2rem;position:relative;z-index:1;text-align:center;}
 .footer-inner{max-width:1080px;margin:0 auto;}
-.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;margin-bottom:3rem;justify-items:center;}
 .footer-brand-logo{font-family:'Fredoka One',cursive;font-size:1.8rem;color:var(--green);letter-spacing:2px;margin-bottom:0.5rem;}
 .footer-brand-desc{font-size:0.8rem;color:#0a2a12;line-height:1.7;max-width:260px;}
 .footer-col-title{font-size:0.62rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#0f2a14;margin-bottom:1rem;}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:0.65rem;}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:0.65rem;align-items:center;}
 .footer-links a{color:#0a2a12;font-size:0.8rem;transition:color 0.2s;}
 .footer-links a:hover{color:var(--green);}
-.footer-bottom{border-top:1px solid #060f07;padding-top:2rem;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;}
+.footer-bottom{border-top:1px solid #060f07;padding-top:2rem;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:1rem;}
 .footer-copy{font-size:0.7rem;color:#6a9b77;}
 .footer-disclaimer{font-size:0.66rem;color:#061208;max-width:460px;line-height:1.6;margin-top:4px;}
 
@@ -265,6 +265,7 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
   .token-stats .tstat:last-child{grid-column:1/-1;}
   .footer-top{grid-template-columns:1fr;gap:2rem;}
   .footer-bottom{flex-direction:column;}
+  .grid{grid-template-columns:repeat(3,1fr);}
 }
 
 /* ══ MOBILE ══ */
@@ -279,7 +280,7 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
   .hstat:last-child{border-bottom:none;}
   .about-cards{grid-template-columns:1fr;}
   .roadmap-grid{grid-template-columns:1fr;}
-  .token-stats{grid-template-columns:1fr;}
+  .token-stats{grid-template-columns:repeat(2,1fr);}
   .token-stats .tstat:last-child{grid-column:auto;}
   .contract-box{flex-direction:column;align-items:flex-start;}
   .ca-copy{width:100%;text-align:center;}
@@ -288,6 +289,7 @@ footer{background:#010402;border-top:1px solid rgba(74,222,128,0.07);padding:4re
   .soc-btn{width:100%;justify-content:center;}
   .mobile-menu a{font-size:1.3rem;}
   .pagination-preview{display:none;}
+  .grid{grid-template-columns:repeat(2,1fr);gap:16px;}
   .hero-title{    font-size:2.8rem;    letter-spacing:1px;    line-height:1;}
   .hero-ring{    display:none;}
   .phone-frame{    width:190px;}
