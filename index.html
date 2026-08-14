@@ -22,6 +22,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#tokenomics">Tokenomics</a></li>
+    <li><a href="#archive">Chapters</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#community">Community</a></li>
@@ -38,6 +39,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about">About</a>
   <a href="#tokenomics">Tokenomics</a>
+  <a href="#archive">Chapters</a>
   <a href="#roadmap">Roadmap</a>
   <a href="#faq">FAQ</a>
   <a href="#community">Community</a>
@@ -216,6 +218,93 @@
 
 <div class="divider"></div>
 
+<!-- ══ KEEPERS ══ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>Core Signal Active</span>
+    <h1 class="title">THE PLOMP<br><em>CHRONICLES</em></h1>
+    <p class="lede">Every Plomper has a story. Every chapter brings us closer to The Core — and closer to the truth about who betrayed the Green Order.</p>
+
+    <div class="progress-row">
+      <div class="progress-track"><div class="progress-fill"></div></div>
+      <div class="progress-label">7 / 12 CHAPTERS RELEASED — 58% COMPLETE</div>
+    </div>
+
+    <div class="signal-box">
+      <div class="signal-left">
+        <div class="k">Next Transmission</div>
+        <div class="v">Chapter VIII — The Reckoning</div>
+      </div>
+      <div class="countdown">
+        <div><span id="dd">--</span><small>DAYS</small></div>
+        <div><span id="hh">--</span><small>HRS</small></div>
+        <div><span id="mm">--</span><small>MIN</small></div>
+        <div><span id="ss">--</span><small>SEC</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="archive">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Transmission Archive</h2>
+      <span class="tag">Season One — The Awakening</span>
+    </div>
+
+    <div class="faction-key">
+      <span class="faction-pill f-green"><i></i>Green Order</span>
+      <span class="faction-pill f-tide"><i></i>Black Tide</span>
+      <span class="faction-pill f-ash"><i></i>Ashborn</span>
+      <span class="faction-pill f-keeper"><i></i>Keepers</span>
+    </div>
+
+    <div class="grid" id="chapterGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="keepers" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Keeper Tracker</h2>
+      <span class="tag">1 of 7 Awakened</span>
+    </div>
+    <p style="color:var(--parchment-dim); font-size:13px; max-width:520px; margin-bottom:10px;">The Core was divided between Seven Keepers before the fall of the Green Order. As chapters unlock, so do they.</p>
+    <div class="tracker" id="keeperTracker"></div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow-sm" id="modalChapNum">Chapter</div>
+        <h3 id="modalTitle">Title</h3>
+      </div>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <img class="modal-img" id="modalImg" src="" alt="">
+    <div class="modal-text" id="modalText"></div>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+
+<!-- ══ NFT COLLECTION ══ -->
+<section class="section" id="nft-collection">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>PLOMP NFT Collection</h2>
+      <span class="tag">Four Factions. One World. Endless Legends.</span>
+    </div>
+    <img src="assets/ft-collection.jpg" alt="PLOMP NFT Collection - Four Factions" style="width:100%; max-width:1000px; margin:2rem auto; border-radius:8px; display:block;">
+    <p style="text-align:center; color:var(--parchment-dim); font-size:14px; margin-top:1rem;">The Seven Keepers guard the secrets of The Core. But they are not the only guardians. Something darker awakens. Something greater. 4,000 legends will emerge from the four factions — are you ready to join them?</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- ══ ROADMAP ══ -->
 <section id="roadmap" style="background:var(--dark2);">
   <div class="container">
@@ -249,6 +338,18 @@
           <li class="ritem pending"><span class="ritem-icon">○</span>KOL & influencer outreach</li>
         </ul>
       </div>
+      <div class="rcard active reveal">
+        <span class="rcard-status status-live">● In Progress</span>
+        <div class="rphase">Phase 02.5</div>
+        <div class="rtitle">Building Utility</div>
+        <ul class="ritems">
+          <li class="ritem active-item"><span class="ritem-icon">◉</span>PLOMP NFT Collection (4,000 — 4 Factions)</li>
+          <li class="ritem active-item"><span class="ritem-icon">◉</span>Utility smart contract development</li>
+          <li class="ritem active-item"><span class="ritem-icon">◉</span>Faction-based gameplay mechanics</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>NFT whitelist & launch</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>Beta testing with community</li>
+        </ul>
+      </div>
       <div class="rcard reveal">
         <span class="rcard-status status-soon">Soon</span>
         <div class="rphase">Phase 03</div>
@@ -257,7 +358,7 @@
           <li class="ritem pending"><span class="ritem-icon">○</span>CEX listing applications</li>
           <li class="ritem pending"><span class="ritem-icon">○</span>Major airdrop campaign</li>
           <li class="ritem pending"><span class="ritem-icon">○</span>PLOMP merchandise drop</li>
-          <li class="ritem pending"><span class="ritem-icon">○</span>Community NFT collection</li>
+          <li class="ritem pending"><span class="ritem-icon">○</span>NFT secondary marketplace</li>
           <li class="ritem pending"><span class="ritem-icon">○</span>Sticker pack & meme kit</li>
         </ul>
       </div>
@@ -380,7 +481,7 @@
     </div>
     <div class="social-row">
       <a href="https://t.me/PLOMPONSOL" target="_blank" class="soc-btn soc-tg"> Telegram</a>
-      <a href="https://x.com/PLOMPONSOLSOL" target="_blank" class="soc-btn soc-x">Follow on X</a>
+      <a href="https://x.com/PLOMPONSOL?s=20" target="_blank" class="soc-btn soc-x">Follow on X</a>
       <a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank" class="soc-btn soc-dex"> DexScreener</a>
       <a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank" class="soc-btn soc-green"> Buy $PMP</a>
     </div>
@@ -410,7 +511,7 @@
         <div class="footer-col-title">Official Links</div>
         <ul class="footer-links">
           <li><a href="https://t.me/PLOMPONSOL" target="_blank">Telegram</a></li>
-          <li><a href="https://x.com/PLOMPONSOLSOL" target="_blank">Twitter / X</a></li>
+          <li><a href="https://x.com/PLOMPONSOL?s=20" target="_blank">Twitter / X</a></li>
           <li><a href="https://dexscreener.com/solana/7MhyuhRTJP64NtE32DRdE6YqYvRrbeSPb5vmbTUBKFDx" target="_blank">DexScreener</a></li>
           <li><a href="https://x.com/STRANGCOZY" target="_blank">Lead: @STRANGCOZY</a></li>
         </ul>
@@ -426,5 +527,6 @@
 </footer>
 
 <script src="assets/main.js"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>
